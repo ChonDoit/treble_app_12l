@@ -269,6 +269,10 @@ object Misc: EntryStartup {
                 val value = sp.getBoolean(key, false)
                 SystemProperties.set("persist.sys.phh.allow_binder_thread_on_incoming_calls", if(value) "1" else "0")
             }
+	    MiscSettings.escoTransportUnitSize -> {
+                val value = sp.getString(key, "16")
+                SystemProperties.set("persist.sys.bt.esco_transport_unit_size", value)
+            }
         }
     }
 
