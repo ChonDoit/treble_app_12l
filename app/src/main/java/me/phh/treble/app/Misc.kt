@@ -277,6 +277,10 @@ object Misc: EntryStartup {
                 val value = sp.getBoolean(key, false)
                 SystemProperties.set("persist.sys.phh.dynamic_superuser", if (value) "1" else "0")
             }
+	    MiscSettings.launcher3 -> {
+                val value = sp.getBoolean(key, false)
+                SystemProperties.set("persist.sys.phh.launcher3", if (value) "true" else "false")
+            }
         }
     }
 
