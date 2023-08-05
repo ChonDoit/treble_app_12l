@@ -12,7 +12,15 @@
     <PreferenceCategory android:title="ROOT SOLUTIONS">
         <Preference
             android:title="Securize"
-            android:key="key_misc_securize" />
+	    android:key="key_misc_securize" />
+	<SwitchPreference
+	    android:defaultValue="0"
+	    android:enabled="true"
+	    android:key="key_misc_dynamic_superuser"
+	    android:title="Toggle Dynamic Superuser"
+	    android:summaryOn="Dynamic root is enabled"
+	    android:summaryOff="Dynamic root is disabled" />
+
     </PreferenceCategory>
     <PreferenceCategory android:title="SECURITY">
         <ListPreference

@@ -41,6 +41,7 @@ object MiscSettings : Settings {
     val mtkTouchHintIsRotate = "key_misc_mediatek_touch_hint_rotate"
     val allowBinderThread = "key_misc_allow_binder_thread_on_incoming_calls"
     val escoTransportUnitSize = "key_misc_esco_transport_unit_size"
+    val dynamicsuperuser = "key_misc_dynamic_superuser"
 
     override fun enabled() = true
 }
